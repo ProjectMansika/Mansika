@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+:root {
+    --themegreen: rgb(25, 112, 54);
+    --themepink: rgb(247, 79, 107);
+    --themelightpink: pink;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+button,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.fullContainer {
+    width: 100%;   
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.sectionTitle{
+    width: 300px;
+    border-bottom: 3px solid var(--themegreen);
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-family: 'Amatic Sc', sans-serif;
+    font-weight: 700;
+    color: var(--themepink);
+}
+
+.sectionTitle::after{
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--themegreen);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(78%);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid white;
+
+}
+
+section {
+    padding: 100px 0;
+    position: relative;
+}
+
+header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 2;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .logo{
+    padding: 15px 0;
+    height: 125px;
+}
+
+header .container .logo img{
+    height: 100%;
+}
+
+header nav ul{
+    list-style-type: none;
+    padding-top: 25px;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 19px;
+    color: pink;
+    font-weight: 550;
+    transition: 0.09s;
+}
+
+header nav ul li a:hover{
+    border-bottom: solid var(--themegreen);
+}
+
+header nav ul li a:active{
+    border-bottom: solid rgb(139, 194, 139);
+}
+
+
+.banner {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("./Images/AUD_2577.JPG");
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+
+}
+
+
+.banner h1 {
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 4rem;
+    font-family: 'Amatic SC', sans-serif;
+    color: white;
+    text-shadow: 0 0 2px black;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+
+.banner h1 span{
+    background-color: var(--themegreen);
+    border-radius: 15px;
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 15px;
+    font-weight: 700;
+}
+
+
+
+.banner p{
+    color: white;
+    width: 100%;
+    font-weight: 700;
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    font-size: large;
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.banner button{
+    background-color: var(--themegreen);
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+    margin-top: 15px;
+    border: none;
+    border: 4px solid var(--themegreen);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: var(--themelightpink);
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.banner button:hover{
+    background-color: #fff;
+}
+
+.banner button:active{
+    background-color: green;
+}
+
+
+#About .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    height: 245px;
+}
+
+#About .cards > div{
+    width: 350px;
+    background-color: var(--themelightpink);
+    padding: 35px;
+    color: var(--themegreen);
+    text-align: center;
+    border-radius: 10px;
+    height: 230px;
+    border: 2px solid var(--themepink);
+    transition: 0.5s;
+}
+
+#About .cards .title{
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 700;
+    color: rgb(15, 75, 15);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#About p{
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    font-size: 20px
+}
+
+#About .cards p{
+    font-family: 'Kalam', cursive;
+    line-height: 22px;
+}
+
+#About .cards > div:hover {
+    width: 400px;
+    margin-top: -20px;
+    border-color: var(--themegreen);
+    padding: 55px;
+    height: auto;
+}
+
+.journey {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: url(./Images/journey.JPG);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.journey .container .sectionTitle {
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 15px;
+}
+
+
+.journey .boxContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.journey .boxContainer .box{
+    background-color: var(--themelightpink);
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 8px 2px rgb(133, 151, 129);
+}
+
+.journey .boxContainer .box .cardImage{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.journey .boxContainer .box .cardImage:after{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    transition: 0.7s;
+}
+
+.journey .boxContainer .box:nth-child(1) .cardImage,
+.journey .boxContainer .box:nth-child(1) .cardImage:after {
+    background-image: url("./Images/crowdfunding.jpg");
+}
+
+.journey .boxContainer .box:nth-child(2) .cardImage,
+.journey .boxContainer .box:nth-child(2) .cardImage:after {
+    background-image: url("./Images/collection.jpeg");
+}
+
+.journey .boxContainer .box:nth-child(3) .cardImage,
+.journey .boxContainer .box:nth-child(3) .cardImage:after {
+    background-image: url("./Images/goonj.JPG");
+}
+
+.journey .boxContainer .box:nth-child(4) .cardImage,
+.journey .boxContainer .box:nth-child(4) .cardImage:after {
+    background-image: url("./Images/flashmob.JPG");
+}
+
+
+.journey .boxContainer .box:hover .cardImage::after {
+    top: 100%;
+}
+
+.journey .boxContainer .box .journeyTitle {
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: 700;
+    font-family: 'Amatic Sc', sans-serif;
+    color: rgb(15, 75, 15);
+}
+
+.journey .boxContainer .box .Count {
+    font-size: 18px;
+
+    color: var(--themegreen);
+    margin-top: 10px;
+    font-family: 'kalam', cursive;
+}
+
+.journey .boxContainer .box .Count span{
+    color: var(--themepink);
+}
+
+
+.gallery .galleryContainer {
+    column-count: 4;
+    column-gap: 5px;
+    min-width: 100%;
+}
+
+.gallery .galleryContainer .item {
+    position: relative;
+    margin-bottom: 5px;
+    overflow: hidden;
+
+}
+
+.gallery .galleryContainer img {
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+.gallery .galleryContainer .title {
+    position: absolute;
+    background-color: var(--themelightpink);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.gallery .galleryContainer .item:hover .title{
+    opacity: 1;
+}
+
+.gallery .galleryContainer .item:hover img {
+    transform: scale(1.2);
+}
+
+
+footer {
+    background-color: #181818;
+    color: #7f7f7f;
+    padding: 50px 0;
+    font-size: 14px;
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+footer .title{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    margin-bottom: 30px;
+    padding: 0 0 5px;
+}
+
+footer p{
+    margin-bottom: 25px;
+}
+
+footer .linksContainer ul {
+    list-style-type: none;
+}
+
+footer .linksContainer ul li a {
+    text-decoration: none;
+    color: #7f7f7f;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+footer .logoContainer img {
+    height: 100px;
+    margin-bottom: 11px;
+}
+
+footer .logoContainer p{
+    font-family: 'Kalam', cursive;
+    font-size: 18px;
+}
+
+footer p {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer .fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+footer .fa:hover {
+    opacity: 0.7;
+}
+
+
+footer .fa-instagram {
+    background: #125688;
+    color: white;
+
+}
+
+footer .fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+footer .fa-soundcloud {
+    background: rgb(255, 94, 0);
+    color: white;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+
+@media screen and (max-width: 1140px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .banner h1{
+        margin-top: 200px;
+    }
+    #About .cards{
+        justify-content: space-around;
+        height: auto;
+    }
+    #About .cards > div {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner{
+        background-position-x: 45%;
+    }
+    .banner h1{
+        font-size: 2.5rem;
+    }
+    .journey .boxContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav {
+        position: relative;
+        border: 2px solid #fff;
+        height: 30px;
+        width: 30px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    header nav:after{
+        top: 17px;
+    }
+    header nav:before{
+        top: 7px;
+    }
+    header nav:after,
+    header nav:before {
+        content: "";
+        height: 2px;
+        width: 17px;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        left: 5px;
+    }
+    header nav ul {
+        position: absolute;
+        right: -400px;
+        top: 53px;
+        transition: 0.5s;
+    }
+    header nav:hover ul {
+        right: 0;
+    }
+    header nav ul li {
+        display: block;
+    }
+    header nav ul li a{
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .banner {
+        background-position-x: 65%;
+    }
+    .banner p{
+        font-size: 14px;
+    }
+
+    #About .cards > div:hover {
+        width:350px;
+    }
+
+    .gallery .galleryContainer{
+        column-count: 2;
+    }
+    .journey{
+        height: auto;
+    }
+    footer .container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .banner h1{
+        margin-top: 150px;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .banner button {
+        margin-bottom: 10px;
+    }
+    #About p{
+        text-align: justify;
+    }
+    #About .cards > div:hover{
+        width: 400px;
+        margin-top: 10px;
+        padding: 35px;
+    }
+    .journey .boxContainer{
+        grid-template-columns: 1fr;
+    }
+    .gallery .galleryContainer{
+        column-count: 1;
+    }
+    footer .container{
+        grid-template-columns: 1fr;
+    }
+
+}
+@media screen and (max-width: 320px){
+    #About p{
+        font-size: 15px;
+    }
+}
+
+
