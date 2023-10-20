@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 
 :root {
     --themegreen: rgb(25, 112, 54);
@@ -70,6 +71,7 @@ section {
 
 header{
     width: 100%;
+    font-family: 'Tilt Neon', sans-serif;
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     z-index: 2;
@@ -161,8 +163,8 @@ header nav ul li a:active{
 .banner p{
     color: white;
     width: 100%;
-    font-weight: 700;
-    font-family: 'Kalam', cursive;
+    line-height: 35px;
+    font-family: 'Tilt Neon', sans-serif;
     font-weight: 400;
     font-size: large;
     background-color: rgba(0,0,0,0.3);
@@ -182,7 +184,7 @@ header nav ul li a:active{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     color: var(--themelightpink);
-    font-size: 18px;
+    font-size: 20px;
     transition: 0.5s;
 }
 
@@ -228,7 +230,8 @@ header nav ul li a:active{
 }
 
 #About p{
-    font-family: 'Kalam', cursive;
+    font-family: 'Tilt Neon', sans-serif;
+    line-height: 35px;
     text-align: center;
     font-size: 20px
 }
@@ -247,7 +250,8 @@ header nav ul li a:active{
 }
 
 .journey {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -325,6 +329,25 @@ header nav ul li a:active{
     background-image: url("./Images/flashmob.JPG");
 }
 
+.journey .boxContainer .box:nth-child(5) .cardImage,
+.journey .boxContainer .box:nth-child(5) .cardImage:after {
+    background-image: url("./Images/flashmob2.JPG");
+}
+
+.journey .boxContainer .box:nth-child(6) .cardImage,
+.journey .boxContainer .box:nth-child(6) .cardImage:after {
+    background-image: url("./Images/comingsoon.JPG");
+}
+
+.journey .boxContainer .box:nth-child(7) .cardImage,
+.journey .boxContainer .box:nth-child(7) .cardImage:after {
+    background-image: url("./Images/comingsoon.JPG");
+}
+
+.journey .boxContainer .box:nth-child(8) .cardImage,
+.journey .boxContainer .box:nth-child(8) .cardImage:after {
+    background-image: url("./Images/comingsoon.JPG");
+}
 
 .journey .boxContainer .box:hover .cardImage::after {
     top: 100%;
@@ -638,6 +661,10 @@ footer .fa-github {
     }
     #About p{
         text-align: justify;
+        font-size: smaller;
+    }
+    #About .cards p{
+        font-size: smaller;
     }
     #About .cards > div:hover{
         width: 400px;
@@ -658,6 +685,9 @@ footer .fa-github {
 @media screen and (max-width: 320px){
     #About p{
         font-size: 15px;
+    }
+    #About .cards p{
+        font-size: smaller;
     }
 }
 
