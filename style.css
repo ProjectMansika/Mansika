@@ -341,7 +341,7 @@ header nav ul li a:active{
 
 .journey .boxContainer .box:nth-child(7) .cardImage,
 .journey .boxContainer .box:nth-child(7) .cardImage:after {
-    background-image: url("./Images/podcast.JPG");
+    background-image: url("./Images/podcast.png");
 }
 
 .journey .boxContainer .box:nth-child(8) .cardImage,
