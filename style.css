@@ -316,37 +316,37 @@ header nav ul li a:active{
 
 .journey .boxContainer .box:nth-child(2) .cardImage,
 .journey .boxContainer .box:nth-child(2) .cardImage:after {
-    background-image: url("./Images/collection.jpeg");
+    background-image: url("./Images/pad.png");
 }
 
 .journey .boxContainer .box:nth-child(3) .cardImage,
 .journey .boxContainer .box:nth-child(3) .cardImage:after {
-    background-image: url("./Images/goonj.JPG");
+    background-image: url("./Images/collection.jpeg");
 }
 
 .journey .boxContainer .box:nth-child(4) .cardImage,
 .journey .boxContainer .box:nth-child(4) .cardImage:after {
-    background-image: url("./Images/flashmob.JPG");
+    background-image: url("./Images/goonj.JPG");
 }
 
 .journey .boxContainer .box:nth-child(5) .cardImage,
 .journey .boxContainer .box:nth-child(5) .cardImage:after {
-    background-image: url("./Images/flashmob2.JPG");
+    background-image: url("./Images/flashmob.JPG");
 }
 
 .journey .boxContainer .box:nth-child(6) .cardImage,
 .journey .boxContainer .box:nth-child(6) .cardImage:after {
-    background-image: url("./Images/comingsoon.JPG");
+    background-image: url("./Images/flashmob2.JPG");
 }
 
 .journey .boxContainer .box:nth-child(7) .cardImage,
 .journey .boxContainer .box:nth-child(7) .cardImage:after {
-    background-image: url("./Images/comingsoon.JPG");
+    background-image: url("./Images/podcast.JPG");
 }
 
 .journey .boxContainer .box:nth-child(8) .cardImage,
 .journey .boxContainer .box:nth-child(8) .cardImage:after {
-    background-image: url("./Images/comingsoon.JPG");
+    background-image: url("./Images/dreamgirl.JPG");
 }
 
 .journey .boxContainer .box:hover .cardImage::after {
